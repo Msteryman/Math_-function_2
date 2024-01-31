@@ -45,10 +45,10 @@ def points_on_a_graph_by_y(x_list: np.ndarray or list,  y_list: np.ndarray or li
     coordinate_y.append(ypoints[x_2[0]])
     coordinate_y.append(ypoints[x_2[-1]])
   return(coordinate_x,coordinate_y)
-gn_coord = [5,10]
 
+gn_coord = [] # сюда надо загнать точки y для который вы хотите 
 x = [] # сюда надо загнать все значения x в графике 
 y = [] # сюда надо загнать все значения y в графике 
 
 
-math_python(function_with_graf(x,y),-6,6,0.0001)
+math_python(function_with_graf(x,y,gn_coord),-6,6,0.0001)
